@@ -1,7 +1,5 @@
 from flask import Flask, render_template
 
-#from config import config
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -13,7 +11,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/login.html')
-def Login():
+def login():
     return render_template('auth/login.html')
 
 
